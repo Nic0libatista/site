@@ -6,6 +6,7 @@
     --azul: #05152b;
     --branco: #fff;
     --preto: #000;
+    --marrom: rgb(47, 48, 48);
 }
 /*Css reset (Compatibilizar com todos os navegadores)*/
 * {
@@ -29,6 +30,19 @@ body {
 }
 .container {
     margin: 0 auto; /*Margin 0 auto centraliza o bloco*/
+}
+.botao {
+    text-decoration: none;
+    font-size: 1.3em;
+    font-weight: 700;
+    color: #347ce0;
+    background-color: rgb(202, 202, 190);
+    width: 200px;
+    padding: 8px 0px;
+    border: 2px solid var(--preto);
+    border-radius: 25px;
+    align-self: center;
+    margin-top: 30px;
 }
 
 /**** breakpoints*****/
@@ -59,11 +73,11 @@ label {
 
 nav ul {
     height: 100vh;
-    background-color: grey;
+    background-color: rgba(48, 46, 46, 0.897);
     list-style: none; /* remove bullets */
     width: 65%;
     position: fixed;
-    top:90px;
+    top:87px;
     right: -65%;
     transition: all 0.5s;
 }
@@ -81,6 +95,32 @@ nav ul li a {
 .container {
     margin: 0 auto;
 }
+/* Banner  */
+main {
+height: 60vh;
+background: url(img/croissantecoffee.jpg);
+background-size: cover;
+background-position: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+}
+
+main h1,h2 {
+    color: var(--branco);
+    text-shadow: #000 0.05em 0.05em 0.05em  ; /* sombra */
+
+}
+main h1 {
+    font-size: 3em;
+}
+
+main h2 {
+    font-size: 1.8em;
+    margin-top: 30px;
+}
+
 
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
@@ -127,7 +167,7 @@ margin: 10px 0px 0px 0px;
     }
   
 
-
+  
 }
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
@@ -154,6 +194,7 @@ margin: 10px 0px 0px 0px;
         max-width: 1140px;
         background-color:  rgb(47, 48, 48);
     }
+      /*Cabeçalho*/
     header {
         height: 150px;
     }
@@ -161,7 +202,42 @@ margin: 10px 0px 0px 0px;
         width: 128px;
         height: 128px;
     }
+      /*Transformação do menu */
+    label {
+        display:none;
+    }
+    nav ul {
+        width: 100%;
+        height: auto;
+        position: static;
+        background-color: transparent; /*Remove a cor do background*/
+    }
+
+    nav ul li {
+        float: left;
+        border: 0;
+    }
+    nav ul li a {
+        color: var(--branco);
+    
+    }
+    nav ul li a:hover {
+        color: var(--azul);
+    }
+
+    .container {
+        margin: 0 auto;
+        display: flex;
+        justify-content:space-between;
+        align-items: center ;
+    }
+
 }
+
+
+
+
+
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
