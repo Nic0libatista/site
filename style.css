@@ -136,12 +136,12 @@ main h2 {
 margin: 10px 0px 0px 0px;
 }
 .container {
-    max-width: 540px;
+    max-width: 100%;
     background-color: rgb(47, 48, 48);
 }
 #logo img {
     width: 100px;
-    height: 100px;
+    height: 80px;
 }
 }
 
@@ -155,7 +155,7 @@ margin: 10px 0px 0px 0px;
 /* Tablet portrait >>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px) {
     .container {
-        max-width: 720px;
+        max-width: 100%px;
     }
 
     header {
@@ -180,7 +180,7 @@ margin: 10px 0px 0px 0px;
 @media (min-width: 992px) {
     /* CABEÇALHO */
     .container {
-        max-width: 960px;
+        max-width: 100%;
         background-color:rgb(47, 48, 48);
     }
     header {
