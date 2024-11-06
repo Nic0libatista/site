@@ -163,15 +163,15 @@ margin: 10px 0px 0px 0px;
     }
 
     header {
-        height: 122px;
+        height: 140px;
     }
     #logo img {
-        width: 110px;
-        height: 110px;
+        width: 125px;
+        height: 125px;
     }
 
             main h1 {
-                font-size: 4em;
+                font-size: 5em;
             }
     label {
      font-size: 3em;
