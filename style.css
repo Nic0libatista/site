@@ -178,6 +178,10 @@ margin: 10px 0px 0px 0px;
     label {
      font-size: 3em;
       }
+      .botao {
+        background-color: white;
+    }
+    
   
 
   
@@ -209,8 +213,18 @@ margin: 10px 0px 0px 0px;
 
 /* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
+
+
 /* PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
+    .botao {
+        background-color: rgba(0,0,0, 0.3);
+        
+    }
+    .botao:hover {
+        background-color: white;
+    }
+
     .container {
         max-width: 100%;
         background-color:  rgb(47, 48, 48);
@@ -252,6 +266,7 @@ margin: 10px 0px 0px 0px;
         justify-content:space-between;
         align-items: center ;
     }
+    
 
 }
 
