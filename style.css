@@ -159,7 +159,7 @@ margin: 10px 0px 0px 0px;
 /* Tablet portrait >>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px) {
     .container {
-        max-width: 100%px;
+        max-width: 100%;
     }
 
     header {
@@ -210,7 +210,7 @@ margin: 10px 0px 0px 0px;
 /* PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
     .container {
-        max-width: 1140px;
+        max-width: 100%;
         background-color:  rgb(47, 48, 48);
     }
       /*Cabeçalho*/
