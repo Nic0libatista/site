@@ -30,29 +30,36 @@ body {
 }
 .container {
     margin: 0 auto; /*Margin 0 auto centraliza o bloco*/
+    max-width: 100%;
 }
 .botao {
     text-decoration: none;
     font-size: 1.3em;
     font-weight: 700;
-    color: orangered;
+    color: rgb(128, 69, 47);
     text-shadow: white 0.05em 0.05em 0.05em; 
-    background-color: rgba(#fff);
+    background-color: rgba(#ff1f1f);
     width: 200px;
     padding: 8px 0px;
-    border: 2px solid var(--branco);
+    border: 2px solid rgb(4, 36, 4);
     border-radius: 25px;
     align-self: center;
     margin-top: 30px;
 }
 .botao:hover {
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.774);
 }
+
+#imagemDestaque img {
+    border-radius: 50%;
+}
+/******* Fim do layout ******/
+
 
 /**** breakpoints*****/
 
-/* Smartphones portrait >>>>>>>>>>>>>>>>>>>>>>>>>> */
-/* CABEÇALHO */
+/* Smartphones portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+/*********************************** CABEÇALHO *************************************/
 header {
     height: 90px;
     background-color:rgb(48, 46, 46);
@@ -99,10 +106,10 @@ nav ul li a {
 .container {
     margin: 0 auto;
 }
-/* Banner  */
+/************************************ Banner  ********************************************/
 main {
 height: 60vh;
-background: url(img/banner02.PNG);
+background: url(img/croissantt.png);
 background-size: cover;
 background-position: center;
 display: flex;
@@ -125,19 +132,27 @@ main h2 {
     margin-top: 30px;
     text-shadow: rgb(46, 5, 5) 0.05em 0.05em 0.05em;
 }
+.botao {
+    color: green;
+    background-color: rgba(175, 174, 174, 0.774);
+}
+.botao:hover {
+    background-color: white;
+}
 
 
 
 
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< Fim do smartphone portrait  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 
 
 
 
-/* Smartphones Landscape >>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Smartphones Landscape >>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 576px) {
-/* CABEÇALHO */
+/******************************* CABEÇALHO ********************* */
 #logo img {
 margin: 10px 0px 0px 0px;
 }
@@ -149,6 +164,9 @@ margin: 10px 0px 0px 0px;
     width: 80px;
     height: 80px;
 }
+main {
+    height: 80vh;
+}
 }
 
 
@@ -156,9 +174,9 @@ margin: 10px 0px 0px 0px;
 
 
 
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
-/* Tablet portrait >>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Tablet portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 768px) {
     .container {
         max-width: 100%;
@@ -180,6 +198,7 @@ margin: 10px 0px 0px 0px;
       }
       .botao {
         background-color: white;
+      
     }
     
   
@@ -187,11 +206,11 @@ margin: 10px 0px 0px 0px;
   
 }
 
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< fim Tablet portrait<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
-/* Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Tablet Landscape >>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 992px) {
-    /* CABEÇALHO */
+    /************************************** CABEÇALHO ***********************************/
     .container {
         max-width: 100%;
         background-color:rgb(47, 48, 48);
@@ -211,14 +230,14 @@ margin: 10px 0px 0px 0px;
 
 }
 
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< fim Tablet Landscape <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
 
 
-/* PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>> PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px) {
     .botao {
-        background-color: rgba(0,0,0, 0.3);
+        background-color: rgba(175, 174, 174, 0.774);
         
     }
     .botao:hover {
@@ -227,11 +246,12 @@ margin: 10px 0px 0px 0px;
 
     .container {
         max-width: 100%;
-        background-color:  rgb(47, 48, 48);
+        background-color:  rgb(0, 0, 0);
     }
-      /*Cabeçalho*/
+      /********************************Cabeçalho********************************************/
     header {
         height: 150px;
+        max-width: 100%;
     }
     #logo img {
         width: 128px;
@@ -251,13 +271,14 @@ margin: 10px 0px 0px 0px;
     nav ul li {
         float: left;
         border: 0;
+        
     }
     nav ul li a {
         color: var(--branco);
     
     }
     nav ul li a:hover {
-        color: var(--azul);
+        color: green;
     }
 
     .container {
@@ -265,6 +286,7 @@ margin: 10px 0px 0px 0px;
         display: flex;
         justify-content:space-between;
         align-items: center ;
+        max-width: 100%;
     }
     
 
@@ -275,9 +297,9 @@ margin: 10px 0px 0px 0px;
 
 
 
-/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+/* <<<<<<<<<<<<<<<<<<<<<<<<<<<<<< F im PCs / Notebooks <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
-/* telas fullhd / 4K / smartTv >>>>>>>>>>>>>>>>>>>>>>>>>> */
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> telas fullhd / 4K / smartTv >>>>>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1420px) {
     .container {
         max-width: 1360px;
