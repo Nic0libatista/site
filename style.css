@@ -108,7 +108,7 @@ label {
    position: fixed;
    top: 15px;
    right: 33px;
-   color: rgb(103, 105, 105, 0.5);
+   color: var(--branco);
 }
 
 
@@ -149,7 +149,7 @@ main h2 {
 
 /* >>>>>>>>>>> Destaque >>>>>>>>>> */
 #destaque {
-    background: linear-gradient(black,white, grey, rgba(128, 128, 128, 0.507), rgba(255, 255, 255, 0.144), rgba(255, 255, 255, 0.308), black), url(img/cupcakeescruro.jpg); 
+    background: grey; 
     background-size: cover;
     background-position: center;
     padding: 50px 15px;
