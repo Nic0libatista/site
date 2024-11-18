@@ -248,6 +248,7 @@ margin-bottom: 15px;
         width: 256px;
         height: 256px;
 }
+}
 
 /* Fim | Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>*/
 
@@ -260,6 +261,17 @@ margin-bottom: 15px;
         max-width: 720px;
         /* background-color: #00ff00; */
     }
+    
+header {
+    height: 125px;
+}
+nav ul {
+    top: 105px;
+    right: -50%;
+    width: 50%;
+    transition: all 0.5s;
+}
+
 
     /****** Banner ******/
     main {
