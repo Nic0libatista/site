@@ -210,6 +210,24 @@ margin-bottom: 15px;
     flex-direction: column;
     align-items: center;
 }
+#sobre {
+    padding: 50px 15px;
+}
+
+#sobre h2, p {
+    color: var(--branco);
+}
+
+#sobre h2 {
+    margin-bottom: 20px;
+}
+
+#video iframe {
+    width: 290px;
+    height: 191px;
+    margin-top: 20px;
+}
+
 
 
 /* FIm | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
@@ -248,6 +266,29 @@ margin-bottom: 15px;
         width: 256px;
         height: 256px;
 }
+   /* >>>>>>>>>>>>>>>>>>>>>>>>> Sobre */
+
+   
+    
+   #sobre {
+    padding: 50px 15px;
+}
+
+#sobre h2, p {
+    color: var(--branco);
+}
+
+#sobre h2 {
+    margin-bottom: 20px;
+}
+
+#video iframe {
+    width: 97px;
+    height: 191px;
+    margin-top: 100px;
+}
+
+
 }
 
 /* Fim | Smartphone Landscape >>>>>>>>>>>>>>>>>>>>>>*/
@@ -287,8 +328,21 @@ nav ul {
         width: 440px;
         height: 440px;
     }
-  
-}
+
+    .topicos {
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+    }
+
+
+    #video iframe {
+        width: 150px;
+        height: 191px;
+        margin-top: 100px;
+    }
+    
+ 
 
 /* Fim | Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
@@ -370,12 +424,46 @@ nav ul {
     }
     #imagemDestaque {
         display: block;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-right: 100px;
+    }
+    #imagemDestaque img {
+        margin-right: 100px;
+    
+  
+    }
+  
+    
+    
+
+       /******* Sobre ******/
+       #sobre .container {
+        flex-direction: row;
+        align-items: center;
     }
 
-    #destaque {
-        background-attachment: fixed;
+    #video iframe {
+        margin: 0;
     }
-
+        /******* Sobre ******/
+        #sobre {
+        
+            margin-top: 170px;
+        }
+        #sobre .container {
+            flex-direction: row;
+            align-items: center;
+        }
+    
+        #video iframe {
+            margin: 0;
+            width: 640px;
+            height: 380px;
+            margin-left: 80px;
+        }
+    
 }
 
 /* Fim | PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
