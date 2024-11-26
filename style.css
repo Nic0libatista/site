@@ -215,6 +215,9 @@ margin-bottom: 15px;
 #sobre {
     padding: 50px 15px;
 }
+#sobre .container #institucional {
+    align-items: center;
+}
 
 #sobre h2, p {
     color: var(--branco);
@@ -339,7 +342,7 @@ nav ul {
 
 
     #video iframe {
-        width: 400px;
+        width: 450px;
         height: 191px;
         margin-top: 100px;
     }
@@ -492,5 +495,13 @@ nav ul {
     main h1 {
         font-size: 6.5em;
     }
+
+    #video iframe {
+        margin: 0;
+        width: 940px;
+        height: 380px;
+        margin-left: 80px;
+    }
+
 
 }
