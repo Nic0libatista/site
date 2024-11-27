@@ -44,14 +44,27 @@ body {
     color: rgb(128, 69, 47);
     text-shadow: rgb(0, 0, 0) 0.05em 0.05em 0.05em; 
     width: 200px;
-    padding: 8px 0px;
+    padding: 10px 20px;
     border: 2px solid rgb(4, 36, 4);
     border-radius: 25px;
     align-self: center;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 .botao:hover {
     background-color: rgba(0, 0, 0, 0.774);
+}
+
+#institucional {
+    text-align: center;
+}
+
+#sobre .container {
+    flex-direction: column;
+}
+
+#institucional {
+    text-align: center; 
+    
 }
 
 
@@ -112,6 +125,7 @@ label {
    right: 33px;
    color: var(--branco);
 }
+
 
 
 
@@ -215,9 +229,7 @@ margin-bottom: 15px;
 #sobre {
     padding: 50px 15px;
 }
-#sobre .container #institucional {
-    align-items: center;
-}
+
 
 #sobre h2, p {
     color: var(--branco);
@@ -226,6 +238,9 @@ margin-bottom: 15px;
 #sobre h2 {
     margin-bottom: 20px;
 }
+#destaque .container {
+    flex-direction: row;
+}
 
 #video iframe {
     width: 270px;
@@ -233,8 +248,30 @@ margin-bottom: 15px;
     margin-top: 20px;
 }
 
+#faixadestaque {
+    background: url(img/lousa1.png);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 15px;
+}
 
+#faixadestaque .container {
+    flex-direction: column;
+}
 
+#imagemfaixa img {
+    width: 256px;
+    height: 256px;
+}
+
+#textofaixa h2 {
+    margin-bottom: 15px;
+    
+}
+
+#textofaixa p {
+    margin-bottom: 50px;
+}
 /* FIm | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
 
 
@@ -273,7 +310,10 @@ margin-bottom: 15px;
 }
    /* >>>>>>>>>>>>>>>>>>>>>>>>> Sobre */
 
-   
+   #sobre .container {
+    flex-direction: column;
+}
+
     
    #sobre {
     padding: 50px 15px;
@@ -288,9 +328,9 @@ margin-bottom: 15px;
 }
 
 #video iframe {
-    width: 97px;
-    height: 191px;
-    margin-top: 100px;
+    width: 560px;
+    height: 315px;
+    margin-top: 70px;
 }
 
 
@@ -334,20 +374,27 @@ nav ul {
         height: 440px;
     }
 
+
     .topicos {
         display: flex;
         align-items: center;
         margin-top: 5px;
     }
 
-
-    #video iframe {
-        width: 450px;
-        height: 191px;
-        margin-top: 100px;
+    #sobre {
+        margin-top: 0px;
+      
     }
-    
- 
+    #video iframe {
+        width: 650px;
+        height: 391px;
+        margin-top: 60px;
+    }
+    #sobre #container {
+        align-items: center;
+    }
+}
+  
 
 /* Fim | Tablet Portrait >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
@@ -447,33 +494,38 @@ nav ul {
     
     
 
-       /******* Sobre ******/
-       #sobre .container {
-        flex-direction: row;
-        align-items: center;
-    }
 
-    #video iframe {
-        margin: 0;
-    }
+
         /******* Sobre ******/
         #sobre {
-        
-            margin-top: 170px;
+            margin-top: 10px;
+          
         }
+
         #sobre .container {
             flex-direction: row;
             align-items: center;
         }
     
-        #video iframe {
-            margin: 0;
-            width: 640px;
-            height: 380px;
-            margin-left: 80px;
+        #institucional #video iframe {
+            margin-top: 0;
+            width: 400px;
+            height: 450px;
+            
         }
+     
     
-}
+
+        #faixadestaque {
+            background-attachment: fixed;
+        }
+      
+        #faixadestaque .container {
+            flex-direction: row-reverse;
+           
+        }
+
+    }
 
 /* Fim | PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
