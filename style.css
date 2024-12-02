@@ -87,6 +87,7 @@ body {
     text-align: center;
 }
 
+
 .card img {
     border-radius: 25px 25px 0px 0px;
     width: 330px;
@@ -438,7 +439,7 @@ nav ul {
         height: 440px;
     }
 
-
+    
     .topicos {
         display: flex;
         align-items: center;
@@ -450,7 +451,7 @@ nav ul {
       
     }
     #video iframe {
-        width: 650px;
+        width: 450px;
         height: 391px;
         margin-top: 60px;
     }
@@ -541,6 +542,7 @@ nav ul {
 
     main h2 {
         font-size: 3em;
+    
     }
  #destaque {
         background-attachment: fixed;
@@ -552,6 +554,7 @@ nav ul {
         height: 200px;
         border-radius: 50%;
         margin-right: 100px;
+        margin-top: -190px;
     }
     #imagemDestaque img {
         margin-right: 100px;
@@ -593,6 +596,9 @@ nav ul {
         #faixadestaque .container {
             flex-direction: row-reverse;
            
+        }
+        #imagemfaixa img {
+            margin-left: 30px;
         }
      
  /*Seção conteudo*/ /*
