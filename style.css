@@ -53,6 +53,12 @@ body {
 .botao:hover {
     background-color: rgba(0, 0, 0, 0.774);
 }
+#faixadestaque .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 #institucional {
     text-align: center;
@@ -66,7 +72,39 @@ body {
     text-align: center; 
     
 }
+#video iframe {
+    display: block; /* Necessário para margin funcionar */
+    margin: 0 auto;
+}
 
+.card {
+    width: 330px;
+    height:530px;
+    margin-top: 25px;
+    background-color:orangered;
+    border: 1px solid black;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.card img {
+    border-radius: 25px 25px 0px 0px;
+    width: 330px;
+    height: 280px;
+}
+
+.card h3 {
+    margin-top: 15px;
+}
+.card p {
+    text-align: left;
+    padding: 10px 30px 50px 30px;
+}
+.card a{
+    padding: 10px 100px;
+    border: 0;
+    background-color: white;
+}
 
 /* Fim do Layout <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -191,7 +229,7 @@ border-radius: 50%;
 
 
 #textoDestaque {
-    color: rgba(255, 255, 255, 0.712);
+    color: rgba(255, 255, 255, 0.89);
 }
 #textoDestaque h2 {
     margin-bottom: 20px;
@@ -271,6 +309,32 @@ margin-bottom: 15px;
 
 #textofaixa p {
     margin-bottom: 50px;
+}
+
+/* seção de conteúdo */
+#conteudo {
+    padding: 50px 0px;
+}
+#conteudo .container {
+    flex-direction: column;
+    align-items: center;
+}
+#conteudo .container h2{
+    color:rgb(240, 240, 235);
+    margin-bottom: 25px;
+}
+/*
+#todos {
+    margin-top:50px;
+    text-decoration: none;
+    font-size: 1.10em;
+    font-weight: 700;
+}
+*/
+.containercards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 /* FIm | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
 
@@ -393,6 +457,10 @@ nav ul {
     #sobre #container {
         align-items: center;
     }
+/* Seção de conteudo */
+    .card {
+        margin: 0px 10px;
+    }
 }
   
 
@@ -506,12 +574,14 @@ nav ul {
             flex-direction: row;
             align-items: center;
         }
+        #sobre h2 {
+            margin-bottom: 20px;
+        }
     
         #institucional #video iframe {
             margin-top: 0;
             width: 400px;
             height: 450px;
-            
         }
      
     
@@ -524,8 +594,14 @@ nav ul {
             flex-direction: row-reverse;
            
         }
-
+     
+ /*Seção conteudo*/ /*
+ #conteudo .containercards {
+    flex-direction: row;
+ }
+ */
     }
+
 
 /* Fim | PCs / Notebooks >>>>>>>>>>>>>>>>>>>>>>>>>>>*/
 
