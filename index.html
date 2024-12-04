@@ -10,7 +10,7 @@
 </head>
 <body>
     <!--- CABEÇARIO -->
-    <header>
+    <header id="inicio">
         <div class="container"> 
         <!-- LOGOTIPO -->
         <div id="logo">
@@ -24,7 +24,7 @@
                 <li><a href="#"> Inicio</a></li>
                 <li><a href="#sobre"> Sobre</a></li>
                 <li><a href="#faixadestaque"> Cardapio</a></li>
-                <li><a href="#"> Contato </a></li>
+                <li><a href="#contato"> Contato </a></li>
             </ul>
         </nav>
         </div>
@@ -39,7 +39,7 @@
     <source src="img/videobandejacurto.mp4" type="video/mp4"> -->
 
 <!-- SEÇÃO DE DESTAQUE -->
- <section id="destaque">
+<section id="destaque">
     <div class="container">
         <!--   IMAGEM DE DESTAQUE -->
         <div id="imagemDestaque">
@@ -70,8 +70,10 @@
                             <img src="img/local.png" alt="Ambiente agradavél" >
                             <p> Ambiente agradavél </p>
                         </div>
-                        
-                    </section>
+            </div>
+
+    </div>
+</section>
                    
                         <section id="sobre">
                             <div class="container">
@@ -92,7 +94,7 @@
                     <div class="container">
                        <div id="imagemfaixa">
                      
-                        <img src="img/scancardapio.png">
+                        <img src="img/scancardapio.png" alt="qr code para abrir o cardapio em pdf">
                        </div>
                     <div id="textofaixa">
                     <h2> Baixe nosso cardapio em pdf! </h2>
@@ -103,7 +105,7 @@
                     </div>
                     </div>
                 </section>
-                </section>
+                
         <!-- Conteudo cartões -->
         <section id="conteudo">
             <div class="container">
@@ -130,13 +132,45 @@
                     <h3>Bolo trufa de maracuja</h3>
                     <p> bolo mesclado de choco e baunilha com ganache, recheado com brigadeiro de maracuja 
                          </p>
-                    <a href="#" class="botao"> Cardapio </a>
+                    <a href="#faixadestaque" class="botao"> Cardapio </a>
                 </div>
 
             <a href="#"> </a>
             </div>
             </div>
         </section>
-  
+        <!-- para a seção de contato usar a tag semântica address -->
+        <address>
+            <div class="container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.744027610523!2d-46.57924542454679!3d-23.541707260870652!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5ec220e5e68b%3A0x795101cf0926d612!2sShopping%20Metr%C3%B4%20Tatuap%C3%A9!5e0!3m2!1spt-BR!2sbr!4v1733334015327!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                <div id="contato1">
+                 <!--<h2> Email </h2>-->
+                 <a href="mailto:nicolisantosbatista@gmail.com?subject=Contato do site!"> <img src="img/iconemail.png" alt="e-mail"><br>nicolisantosbatista@gmail.com</a>
+                <hr>
+               
+                <!--<h2>whatsapp</h2>-->
+                <a href="https://api.whatsapp.com/send?phone=5511984538900"><img src="img/iconwhattsap.png" alt="whatsapp"><br> 98453-8900 </a> <hr>
+                <a href="" target="_blank"><img src="img/iconmapa.png" alt="localização"> <br> shopping tatuapé</a>
+            </div>
+         <!-- <h2> mapa </h2>-->
+            <hr>
+        </div>
+        </address>--
+        
+        <footer>
+            <div class="container">
+                <div id="copyright">
+                    <p> Developed by Nicoli Santos <br></p>
+                </div>
+                <div id="social">
+                <a href="https://www.youtube.com/@lattepapa" target="_blank"><img src="img/iconyoutube.png" alt="Canal do youtube"></a>
+                <a href="https://github.com/Nic0libatista" target="_blank"><img src="img/icongithub.png" alt="Github do desenvolvedor"></a>
+                
+                </div>
+            </div>
+        </footer>
+
+        <!-- Topo do site -->
+        <a href="#inicio" id="topo"> <img src="img/icontopo.png" alt=""> </a>
 </body>
 </html>

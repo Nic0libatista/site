@@ -20,6 +20,11 @@
 }
 
 /* Layout >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>*/
+html{
+    scroll-behavior: smooth;
+    /* Rolagem suave conteudo */
+}
+
 body {
     font-family: "Playwrite GB S", cursive;
      /* font-family: "Open Sans", sans-serif; */ 
@@ -105,6 +110,36 @@ body {
     padding: 10px 100px;
     border: 0;
     background-color: white;
+}
+
+address  {
+    align-items: center;
+    background-color: white;
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 50px;
+}
+
+.contato1 {
+    display: flex;
+    flex-direction: column;
+   
+}
+address iframe {
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding-right: 25px;
+}
+
+address a {
+    text-decoration:none;
+    flex-direction: column;
+}
+
+#topo {
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
 }
 
 /* Fim do Layout <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -337,6 +372,13 @@ margin-bottom: 15px;
     flex-wrap: wrap;
     justify-content: center;
 }
+
+address iframe {
+    display: none;
+}
+#contato1 img {
+    width: 40px;
+}
 /* FIm | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
 
 
@@ -398,6 +440,9 @@ margin-bottom: 15px;
     margin-top: 70px;
 }
 
+#contato iframe {
+    display: block;
+}
 
 }
 
@@ -462,6 +507,13 @@ nav ul {
     .card {
         margin: 0px 10px;
     }
+    address iframe {
+        display: block;
+    }
+    #social {
+        padding-right: 80px;
+    }
+    
 }
   
 
