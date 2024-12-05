@@ -126,6 +126,12 @@ address  {
     flex-direction: column;
    
 }
+#contato1 p {
+    color: brown;
+    text-shadow: rgb(0, 0, 0) 0.05em 0.05em 0.05em; 
+    font-size: 30px;
+    margin-bottom: 8px;
+}
 address iframe {
     margin: 0 auto;
     margin-bottom: 20px;
@@ -640,7 +646,8 @@ nav ul {
        margin-right: 50px;
         margin-left: 300px;
     }
-  
+    
+
     
     
 
@@ -686,6 +693,15 @@ nav ul {
     flex-direction: row;
  }
  */
+
+ iframe {
+    border: 1px black;
+ }
+  
+ #contato1 {
+    margin-left: 190px;
+ }
+
 
     }
 
