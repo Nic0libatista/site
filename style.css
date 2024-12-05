@@ -118,6 +118,7 @@ address  {
     display: flex;
     flex-direction: row-reverse;
     padding-top: 50px;
+    padding-bottom: 30px;
 }
 
 .contato1 {
@@ -141,7 +142,6 @@ address a {
     right: 10px;
     bottom: 10px;
 }
-
 /* Fim do Layout <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 
@@ -379,6 +379,25 @@ address iframe {
 #contato1 img {
     width: 40px;
 }
+#copyright {
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+#social {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;  /* Coloca os ícones em coluna */
+    align-items: center;     /* Centraliza os ícones */
+    margin-top: 6px;        /* Espaço acima dos ícones */
+    margin-right: 65px;
+    margin-bottom: 40px;     /* Espaço abaixo dos ícones */
+}
+
+#social img {
+    width: 40px;  /* Ajusta o tamanho dos ícones */
+    margin: 5px;  /* Espaço entre os ícones */
+}
 /* FIm | Smartphone Portrait >>>>>>>>>>>>>>>>>>>>>>>*/
 
 
@@ -442,6 +461,10 @@ address iframe {
 
 #contato iframe {
     display: block;
+}
+
+#social img {
+    width: 48px;
 }
 
 }
@@ -609,9 +632,13 @@ nav ul {
         margin-top: -190px;
     }
     #imagemDestaque img {
-        margin-right: 100px;
+        margin-right: 300px;
     
   
+    }
+    #textodestaque {
+       margin-right: 50px;
+        margin-left: auto 300px;
     }
   
     
@@ -658,6 +685,7 @@ nav ul {
     flex-direction: row;
  }
  */
+
     }
 
 
