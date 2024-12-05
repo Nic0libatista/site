@@ -638,7 +638,7 @@ nav ul {
     }
     #textodestaque {
        margin-right: 50px;
-        margin-left: auto 300px;
+        margin-left: 300px;
     }
   
     
@@ -679,7 +679,8 @@ nav ul {
         #imagemfaixa img {
             margin-left: 30px;
         }
-     
+        
+       
  /*Seção conteudo*/ /*
  #conteudo .containercards {
     flex-direction: row;
